@@ -1,0 +1,191 @@
+html {
+    font-family: 'Iran Nastaliq';
+    font-size: 35px;
+}
+
+.main {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    background-image: url('../2/2-2/images/golobolbol.jpg');
+    background-size: 100%;
+}
+
+.start {
+    top: 0;
+    right: 28%;
+    color: black;
+}
+
+.s1 {
+    top: 40px;
+    right: 10%;
+}
+
+.s2 {
+    top: 40px;
+    right: 35%;
+}
+
+.s3 {
+    top: 100px;
+    right: 10%;
+}
+
+.s4 {
+    top: 100px;
+    right: 35%;
+}
+
+.s5 {
+    top: 160px;
+    right: 10%;
+}
+
+.s6 {
+    top: 160px;
+    right: 35%;
+}
+
+.s7 {
+    top: 220px;
+    right: 10%;
+}
+
+.s8 {
+    top: 220px;
+    right: 35%;
+}
+
+.s9 {
+    top: 280px;
+    right: 10%;
+}
+
+.s10 {
+    top: 280px;
+    right: 35%;
+}
+
+.s11 {
+    top: 340px;
+    right: 10%;
+}
+
+.s12 {
+    top: 340px;
+    right: 35%;
+}
+
+.s13 {
+    top: 400px;
+    right: 10%;
+}
+
+.s14 {
+    top: 400px;
+    right: 35%;
+}
+
+.s15 {
+    top: 460px;
+    right: 10%;
+}
+
+.s16 {
+    top: 460px;
+    right: 35%;
+}
+
+.s17 {
+    top: 520px;
+    right: 10%;
+}
+
+.s18 {
+    top: 520px;
+    right: 35%;
+}
+
+.s19 {
+    top: 580px;
+    right: 10%;
+}
+
+.s20 {
+    top: 580px;
+    right: 35%;
+}
+
+.s21 {
+    top: 640px;
+    right: 10%;
+}
+
+.s22 {
+    top: 640px;
+    right: 35%;
+}
+
+.s23 {
+    top: 700px;
+    right: 10%;
+}
+
+.s24 {
+    top: 700px;
+    right: 35%;
+}
+
+.s25 {
+    top: 760px;
+    right: 10%;
+}
+
+.s26 {
+    top: 760px;
+    right: 35%;
+}
+
+.s27 {
+    top: 820px;
+    right: 10%;
+}
+
+.s28 {
+    top: 820px;
+    right: 35%;
+}
+
+.s29 {
+    top: 880px;
+    right: 10%;
+}
+
+.s30 {
+    top: 880px;
+    right: 35%;
+}
+
+.s31 {
+    top: 940px;
+    right: 10%;
+}
+
+.s32 {
+    top: 940px;
+    right: 35%;
+}
+
+.end {
+    top: 1000px;
+    right: 55%;
+    color: black;
+}
+
+.box {
+    color: black;
+    position: absolute;
+    display: inline-block;
+    text-shadow: 2px 2px khaki;
+}
