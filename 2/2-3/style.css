@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    background-color: red;
+}
+
+h2 {
+    color: orange;
+    background-color: orange;
+}
+
+h3 {
+    color: yellow;
+    background-color: yellow;
+}
+
+h4 {
+    color: limegreen;
+    background-color: limegreen;
+}
+
+h5 {
+    color: rgb(68, 177, 245);
+    background-color: rgb(68, 177, 245);
+}
+
+h6 {
+    color: rgb(41, 41, 252);
+    background-color: rgb(41, 41, 252);
+}
