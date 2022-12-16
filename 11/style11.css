@@ -1,0 +1,95 @@
+.main {
+    background-color: rgb(114, 248, 248);
+    border: 5px solid darkcyan;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 97vw;
+    height: 96vh;
+}
+
+.first,
+.second {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 23vh;
+}
+
+.box {
+    background-color: rgb(20, 196, 178);
+    font-family: Georgia, 'Times New Roman', serif;
+    border: 2px solid darkcyan;
+    flex-direction: row;
+    overflow: hidden;
+    font-style: italic;
+    text-shadow: white 1px 1px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+    .three,
+    .four,
+    .six {
+        display: none;
+    }
+
+    .one,
+    .two {
+        flex-basis: 40%
+    }
+
+    .five {
+        flex-basis: 90%
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .four,
+    .six {
+        display: none
+    }
+
+    .one,
+    .two,
+    .three {
+        flex-basis: 29%
+    }
+
+    .five {
+        flex-basis: 90%
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .one,
+    .two,
+    .three,
+    .four {
+        flex-basis: 20%
+    }
+
+    .five,
+    .six {
+        flex-basis: 40%
+    }
+}
+
+@media screen and (min-width:1201px) {
+
+    .one,
+    .two,
+    .three,
+    .four {
+        flex-basis: 20%
+    }
+
+    .five,
+    .six {
+        flex-basis: 40%
+    }
+}
