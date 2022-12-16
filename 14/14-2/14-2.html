@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session | 14</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style14.css">
+</head>
+
+<body>
+    <div class="main">
+        <a href="#menu"><button class="menubutton">Menu</button></a>
+        <a href="#target1" class="invisible">Drinks</a>
+        <a href="#target2" class="invisible">Foods</a>
+
+        <div id="target1">
+            <div class="coca drink" onclick="mycoca();">Coca</div>
+            <div class="beer drink" onclick="mybeer();">Beer</div>
+            <div class="water drink" onclick="mywater();">Water</div>
+            <a href="#menu"><button class="back">Back</button></a>
+            <a href="#close"><button class="close">Close</button></a>
+        </div>
+        <div id="target2">
+            <div class="hamburger food" onclick="myhamburger();">Hamburger</div>
+            <div class="pasta food" onclick="mypasta();">Pasta</div>
+            <div class="pizza food" onclick="mypizza();">Pizza</div>
+            <a href="#menu"><button class="back">Back</button></a>
+            <a href="#close"><button class="close">Close</button></a>
+        </div>
+    </div>
+    <div id="menu">
+        <a href="#target2"><button>Foods</button></a>
+        <a href="#target1"><button>Drinks</button></a>
+        <br><br><br><br><br><br><br>
+        <a href="#close"><button class="close">Close</button></a>
+    </div>
+    <div id="close"></div>
+    </div>
+
+    <script>
+
+        let pizza = { name: "pizza" }
+        let hamburger = { name: "hamburger" }
+        let pasta = { name: "pasta" }
+        let coca = { name: "coca" }
+        let water = { name: "water" }
+        let beer = { name: "beer" }
+
+
+        function mypizza() {
+            let choosedFood = prompt("Please enter the name of the food you want!", "pizza");
+            switch (choosedFood) {
+                case "pizza": alert("Excellent choice! Your pizza will be served");
+                    break;
+                case "pasta": alert("Thank you! Your pasta will be served");
+                    break;
+                case "hamburger": alert("Good! Your hamburger will be served");
+                    break;
+                default: alert("Invalid name! please try another food name.");
+            }
+        }
+        function myhamburger() {
+            let choosedFood = prompt("Please enter the name of the food you want!", "hamburger");
+            switch (choosedFood) {
+                case "pizza": alert("Excellent choice! Your pizza will be served");
+                    break;
+                case "pasta": alert("Thank you! Your pasta will be served");
+                    break;
+                case "hamburger": alert("Good! Your hamburger will be served");
+                    break;
+                default: alert("Invalid name! please try another food name.");
+            }
+        }
+        function mypasta() {
+            let choosedFood = prompt("Please enter the name of the food you want!", "pasta");
+            switch (choosedFood) {
+                case "pizza": alert("Excellent choice! Your pizza will be served");
+                    break;
+                case "pasta": alert("Thank you! Your pasta will be served");
+                    break;
+                case "hamburger": alert("Good! Your hamburger will be served");
+                    break;
+                default: alert("Invalid name! please try another food name.");
+            }
+        }
+        function mycoca() {
+            let choosedFood = prompt("Please enter the name of the drink you want!", "coca");
+            switch (choosedFood) {
+                case "coca": alert("Your coca will be served");
+                    break;
+                case "water": alert("Your water will be served");
+                    break;
+                case "beer": alert("Your beer will be served");
+                    break;
+                default: alert("Invalid name! please try another drink.");
+            }
+        }
+        function mywater() {
+            let choosedFood = prompt("Please enter the name of the drink you want!", "water");
+            switch (choosedFood) {
+                case "coca": alert("Your coca will be served");
+                    break;
+                case "water": alert("Your water will be served");
+                    break;
+                case "beer": alert("Your beer will be served");
+                    break;
+                default: alert("Invalid name! please try another drink.");
+            }
+        }
+        function mybeer() {
+            let choosedFood = prompt("Please enter the name of the drink you want!", "beer");
+            switch (choosedFood) {
+                case "coca": alert("Your coca will be served");
+                    break;
+                case "water": alert("Your water will be served");
+                    break;
+                case "beer": alert("Your beer will be served");
+                    break;
+                default: alert("Invalid name! please try another drink.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
