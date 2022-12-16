@@ -1,0 +1,33 @@
+.main {
+    background-color: rosybrown;
+    height: 525px;
+    width: 525px;
+    padding: 1%;
+    display: inline-block;
+}
+
+.inner {
+    background-color: black;
+    height: 510px;
+    width: 510px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.m1 {
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+
+.m2 {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+
+h1 {
+    color: rosybrown;
+}
