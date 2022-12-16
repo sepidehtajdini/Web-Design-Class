@@ -1,0 +1,162 @@
+.main {
+    width: 900px;
+    height: 600px;
+    background-size: 100%;
+    border: 2px solid rgba(94, 25, 25, 0.849);
+    background-image: url("./img/wal.jpg");
+    margin: auto;
+}
+
+.food,
+.drink {
+    border: 3px solid black;
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menubutton {
+    margin-left: 80%;
+}
+
+#target1,
+#target2 {
+    width: 350px;
+    height: 500px;
+}
+
+#menu {
+    width: 200px;
+    height: 320px;
+}
+
+#menu,
+#target1,
+#target2 {
+    position: fixed;
+    background-color: rgba(165, 96, 96, 0.925);
+    top: 95px;
+    box-shadow: -2px 2px 10px 5px gray;
+}
+
+#target1:not(:target),
+#target2:not(:target) {
+    visibility: hidden;
+    top: 0;
+    left: 700px;
+}
+
+#target1:target,
+#target2:target {
+    display: block;
+    left: 600px;
+    top: 100px;
+    transition: left 2s;
+}
+
+#menu:not(:target) {
+    visibility: hidden;
+    left: 950px;
+}
+
+#menu:target {
+    display: block;
+    left: 800px;
+    transition: left 4s;
+}
+
+#close:target,
+.invisible {
+    display: none;
+}
+
+.close {
+    background-color: rgb(146, 64, 64);
+    box-shadow: 2px 2px rgb(133, 40, 40);
+    margin-top: 5px;
+}
+
+.pasta,
+.pizza {
+    background-size: 120%;
+}
+
+.food {
+    color: white;
+    background-position: center;
+}
+
+.pasta {
+    background-image: url("./img/pasta.jpg");
+}
+
+.pizza {
+    background-image: url("./img/pizza.jpg");
+}
+
+.hamburger {
+    background-image: url("./img/hamburger.jpg");
+    background-size: 190px;
+}
+
+.coca {
+    background-image: url("./img/coca.jpg");
+}
+
+.water {
+    background-image: url("./img/water.jpg");
+    background-position: left;
+}
+
+.beer {
+    background-image: url("./img/beer.jpg");
+    background-size: 180%;
+}
+
+.beer,
+.coca {
+    background-position: right;
+}
+
+.water,
+.coca {
+    background-size: 150%;
+}
+
+button {
+    background-color: rgb(224, 88, 88);
+    width: 80px;
+    height: 50px;
+    display: block;
+    font-style: italic;
+    box-shadow: 2px 2px slategrey;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10%;
+    font-family: Georgia, 'Times New Roman', serif;
+    border: 3px ridge white;
+    color: rgb(95, 13, 31);
+}
+
+.food:hover,
+.drink:hover {
+    background-size: 200%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+    font-weight: bolder;
+}
+
+button:active {
+    color: black;
+    background-color: #721f3b;
+    font-weight: bolder;
+}
