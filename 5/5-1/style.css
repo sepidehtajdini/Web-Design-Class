@@ -1,0 +1,68 @@
+.main {
+     height: 61vh;
+     width: 35vw;
+     display: inline-block;
+     position: relative;
+     left: 32vw;
+     top: 20vh;
+     background-color: white;
+}
+
+.box {
+     display: inline-block;
+     height: 25vh;
+     width: 13.9vw;
+     position: absolute;
+}
+
+.center {
+     background-color: yellow;
+     display: inline-block;
+     height: 9.5vh;
+     width: 6.28vw;
+     box-shadow: 1px 1px 5px rgb(225, 202, 0);
+     border: 2px solid rgb(225, 202, 0);
+     position: absolute;
+     top: 25.38vh;
+     right: 14.2vw;
+}
+
+.top {
+     top: 0;
+}
+
+.right {
+     right: 0%;
+}
+
+.left {
+     left: 0%;
+}
+
+.bottom {
+     bottom: 0%;
+}
+
+.one {
+     background-color: rgb(219, 1, 1);
+     border: 2px double rgb(189, 0, 0);
+     box-shadow: 1px 1px 5px 0 rgb(189, 0, 0);
+}
+
+.two {
+     background-color: orangered;
+     border: 2px double rgb(228, 20, 20);
+     box-shadow: 1px 1px 5px 0 red;
+}
+
+.three {
+     background-color: yellowgreen;
+     border: 2px double rgb(111, 167, 0);
+     box-shadow: 1px 1px 5px 0 rgb(111, 167, 0);
+}
+
+.four {
+     background-color: springgreen;
+     border: 2px double rgb(0, 255, 42);
+     box-shadow: 1px 1px 5px 0 rgb(0, 255, 42);
+}
