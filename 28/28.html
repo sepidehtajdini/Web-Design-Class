@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style28.css">
+  <title>Session | 28</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Validation</h2>
+    <h4>Custom styles</h4>
+    <div class="one">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Sepideh" required>
+          <div class="valid-feedback">
+            OK!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Tajdini" required>
+          <div class="valid-feedback">
+            OK!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h4>Browser defaults</h4>
+    <div class="one">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" value="Sepideh" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" value="Tajdini" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+              required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h4>Supported elements</h4>
+    <div class="one">
+      <form class="was-validated">
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Textarea</label>
+          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea"
+            required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the textarea.
+          </div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+          <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
+        </div>
+        <div class="form-check mb-3">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
+          <div class="invalid-feedback">More example invalid feedback text</div>
+        </div>
+
+        <div class="mb-3">
+          <select class="form-select" required aria-label="select example">
+            <option value="">Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="invalid-feedback">Example invalid select feedback</div>
+        </div>
+
+        <div class="mb-3">
+          <input type="file" class="form-control" aria-label="file example" required>
+          <div class="invalid-feedback">Example invalid form file feedback</div>
+        </div>
+
+        <div class="mb-3">
+          <button class="btn btn-success" type="submit" disabled>Submit form</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h4>Tooltips</h4>
+    <div class="one">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationTooltip01" value="Sepideh" required>
+          <div class="valid-tooltip">
+            OK!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationTooltip02" value="Tajdini" required>
+          <div class="valid-tooltip">
+            OK!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipUsername"
+              aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip04" class="form-label">State</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <h2>Input group</h2>
+    <div class="one">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+          aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+
+      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Textarea"></textarea>
+      </div>
+    </div>
+
+    <hr>
+    <h4>Sizing</h4>
+    <div class="one">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+        <input type="text" class="form-control" placeholder="Small" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+        <input type="text" class="form-control" placeholder="Default" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+        <input type="text" class="form-control" placeholder="Large" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
+      </div>
+    </div>
+    <hr>
+    <h4>Checkboxes and radios</h4>
+    <div class="one">
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Checkbox">
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="Radio">
+      </div>
+    </div>
+    <hr>
+    <h4>Multiple inputs</h4>
+    <div class="one">
+      <div class="input-group">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control" placeholder="First name">
+        <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
+      </div>
+    </div>
+    <hr>
+    <h4>Button addons</h4>
+    <div class="one">
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-success" type="button" id="button-addon1">Button</button>
+        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+          aria-describedby="button-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-success" type="button" id="button-addon2">Button</button>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-danger" type="button">Button1</button>
+        <button class="btn btn-outline-info" type="button">Button2</button>
+        <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username"
+          aria-label="Recipient's username with two button addons">
+        <button class="btn btn-outline-danger" type="button">Button1</button>
+        <button class="btn btn-outline-info" type="button">Button2</button>
+      </div>
+    </div>
+
+    <hr>
+    <h4>Buttons with dropdowns </h4>
+    <div class="one">
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <div class="input-group">
+        <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action before</a></li>
+          <li><a class="dropdown-item" href="#">Another action before</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+        <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+        <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h4>Segmented buttons</h4>
+    <div class="one">
+      <div class="input-group mb-3">
+        <button type="button" class="btn btn-outline-primary">Action</button>
+        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+        <button type="button" class="btn btn-outline-info">Action</button>
+        <button type="button" class="btn btn-outline-info dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h4>Custom forms</h4>
+    <div class="one">
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="input-group mb-3">
+        <select class="form-select" id="inputGroupSelect02">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-danger" type="button">Button</button>
+        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <button class="btn btn-outline-danger" type="button">Button</button>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupFile01">Upload</label>
+        <input type="file" class="form-control" id="inputGroupFile01">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-success" type="button" id="inputGroupFileAddon03">Button</button>
+        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+          aria-label="Upload">
+      </div>
+
+      <div class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+          aria-label="Upload">
+        <button class="btn btn-outline-success" type="button" id="inputGroupFileAddon04">Button</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    (() => {
+      'use strict'
+
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+
+</html>
