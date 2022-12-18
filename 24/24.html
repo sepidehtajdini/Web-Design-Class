@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+
+  <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+  <title>Session | 24</title>
+  <link rel="stylesheet" href="./style24.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1>Button group</h1>
+    <div>
+      <p>Group a series of buttons together on a single line or stack them in a vertical column. <br>
+        Wrap a series of buttons with <strong>.btn</strong> in <strong>.btn-group</strong>. <br>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-dark">one</button>
+        <button type="button" class="btn btn-secondary">two</button>
+        <button type="button" class="btn btn-light">three</button>
+      </div>
+      </p>
+      <h3>Sizing</h3>
+      <p>Instead of applying button sizing classes to every button in a group, <br>
+        just add <strong>.btn-group-* </strong>
+        to each <strong>.btn-group</strong>, including each one when nesting multiple groups.
+      <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-success">four</button>
+        <button type="button" class="btn btn-outline-warning">five</button>
+        <button type="button" class="btn btn-outline-danger">six</button>
+      </div>
+      </p>
+    </div>
+    <h1>Collapse</h1>
+    <div>
+      <p>Toggle the visibility of content across your project with a few classes. <br>
+        The collapse JavaScript plugin is used to show and hide content. <br>
+        Buttons or anchors are used as triggers that are mapped to specific elements you toggle. <br>
+        Collapsing an element will animate the <strong>height</strong> from its current value to 0. <br>
+        Given how CSS handles animations, you cannot use padding on a .collapse element. <br>
+        Instead, use the class as an independent wrapping element.
+      <ul>
+        <li><strong>.collapse</strong> hides content</li>
+        <li><strong>.collapse.show </strong>shows content</li>
+      </ul>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEx"
+        aria-expanded="false" aria-controls="collapseEx">
+        collapse.show
+      </button>
+      <div class="collapse.show" id="collapseEx">
+        <div class="card card-body">Some placeholder content for the collapse component.</div>
+      </div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamp"
+        aria-expanded="false" aria-controls="collapseExamp">
+        collapse
+      </button>
+      <div class="collapse" id="collapseExamp">
+        <div class="card card-body">Some placeholder content for the collapse component.</div>
+      </div>
+      </p>
+      <h3>How to use it?</h3>
+      <p>It has been recommend to use a button with the <strong>data-bs-target</strong> attribute. <br>
+        You can also use a link with the <strong>href</strong> attribute (and a role="button"). <br>
+        In both cases, the data-bs-toggle="collapse" is required. <br>
+        <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+          user activates the relevant trigger.</div>
+      </div>
+      </p>
+      <h3>How to collapse horizontally?</h3>
+      <p>
+        <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          collapse-horizontal
+        </button>
+      </p>
+      <div>
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;margin-left: 350px;">
+            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+          </div>
+        </div>
+      </div>
+      <p>
+        Add the <strong>.collapse-horizontal</strong> modifier class to transition the width instead of height <br>
+        and set a width on the immediate child element.
+      </p>
+      <h3>How to toggle multiple targets?</h3>
+      <p>
+        <a class="btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+          aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+          elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      A <strong>button</strong> or <strong>a</strong> can show and hide multiple elements by referencing them <br>
+      with a selector in its href or data-bs-target attribute. <br>
+      Multiple <strong>button</strong> or <strong>a</strong> can show and hide an element if they each reference it
+      with
+      their href or data-bs-target attribute. </p>
+  </div>
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
