@@ -1,0 +1,41 @@
+html {
+    background-color: #85cb93;
+    font-family: Georgia, Times, serif;
+}
+
+form {
+    width: 400px;
+    height: 350px;
+    border: 2px solid #25572f;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #2e6b3a;
+    font-size: large;
+    box-shadow: -5px -5px 10px black;
+}
+
+h3 {
+    text-align: center;
+}
+
+label {
+    margin-left: 40px;
+}
+
+button {
+    color: black;
+    background-color: rgb(44, 44, 44);
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: Georgia, Times, serif;
+    box-shadow: -1px -1px 5px gray;
+    text-shadow: 0.5px -0.5px 4px gray;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
