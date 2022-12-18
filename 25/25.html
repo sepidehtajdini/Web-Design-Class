@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style25.css">
+  <title>Session | 25</title>
+</head>
+
+<body>
+  <div class="main">
+    <h2>Pagination</h2>
+    <p>
+      Pagination is built with list HTML elements so screen readers can announce the number of available links.
+      <br>
+      Use a wrapping <strong>nav</strong> element to identify it as a navigation section to screen readers and
+      other assistive technologies. <br>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <h3>Working with icons</h3>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h3>Disabled and active states</h3>
+    Use <strong>.disabled</strong> for links that appear un-clickable and <strong>.active</strong> to indicate the
+    current page.
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <span class="page-link">Previous</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">2</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <h3>Sizing</h3>
+    Add <strong>.pagination-lg</strong> or <strong>.pagination-sm</strong> for additional sizes.
+    <nav aria-label="...">
+      <ul class="pagination pagination-lg">
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">1</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="...">
+      <ul class="pagination pagination-sm">
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">1</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+    </nav>
+    <h3>Alignment </h3>
+    Change the alignment of pagination components with flexbox utilities like
+    <strong>.justify-content-center</strong>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    Or with <strong>.justify-content-end</strong>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    </p>
+    <hr>
+    <h2>Alerts</h2>
+    <p>Alerts for any length of text, as well as an optional close button. <br>
+      For proper styling, use one of the eight required contextual classes like <strong>.alert-success</strong>
+      <br>
+
+    <div class="alert alert-danger" role="alert">danger alert</div>
+    <div class="alert alert-warning" role="alert">warning alert</div>
+
+    <h3>Link color</h3>
+    Use the <strong>.alert-link</strong> utility class to quickly provide matching colored links within any alert.
+
+    <div class="alert alert-danger" role="alert">A danger alert with <a href="#" class="alert-link">an example
+        link</a></div>
+    <div class="alert alert-warning" role="alert">A warning alert with <a href="#" class="alert-link">an example
+        link</a></div>
+
+    <h3>Additional content</h3>
+    Alerts can contain additional HTML elements like <strong>headings, paragraphs and dividers.</strong>
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">.alert-heading</h4>
+      <p>You successfully read this important alert message.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+    <h3>Icons</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+      </symbol>
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </symbol>
+      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </symbol>
+    </svg>
+
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+        <use xlink:href="#info-fill" />
+      </svg>
+      <div>An example alert with an icon</div>
+    </div>
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+        <use xlink:href="#check-circle-fill" />
+      </svg>
+      <div>An example success alert with an icon</div>
+    </div>
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div>An example warning alert with an icon</div>
+    </div>
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div>An example danger alert with an icon</div>
+    </div>
+    <h3>Dismissing</h3>
+    Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. <br>
+    <ul>
+      <li>Add a close button and the .alert-dismissible class, which adds extra padding to the right of the alert
+        and positions the close button.</li>
+      <li>On the close button, add the data-bs-dismiss="alert" attribute, which triggers the JavaScript
+        functionality. Be sure to use the <strong>button</strong> element with it for proper behavior across all
+        devices.</li>
+      <li>To animate alerts when dismissing them, be sure to add the <strong>.fade</strong> and
+        <strong>.show</strong> classes.
+      </li>
+    </ul>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    </p>
+    <hr>
+    <h2>Badge</h2>
+    <p>
+      Badges scale to match the size of the immediate parent element by using relative font sizing and
+      <strong>em</strong> units. <br> As of v5, badges no longer have focus or hover styles for links. <br>
+    <h4>Example heading <span class="badge bg-dark">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-info">New</span></h6>
+    <h3>Buttons</h3>
+    Badges can be used as part of links or buttons to provide a counter.
+    <button type="button" class="btn btn-light">
+      Notifications <span class="badge text-bg-warning">4</span>
+    </button>
+    <h3>Positioned </h3>
+    Use utilities to modify a <strong>.badge</strong> and position it in the corner of a link or button.
+    <button type="button" class="btn btn-light position-relative">
+      Inbox
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button> <br>
+    You can replace the .badge class with a few more utilities <strong>without a count</strong> for a more generic
+    indicator.
+    <button type="button" class="btn btn-light position-relative">
+      Profile
+      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden">New alerts</span>
+      </span>
+    </button>
+    <h3>Background colors</h3>
+    Set a background-color with contrasting foreground color with our <strong>.text-bg-{color}</strong> helpers.
+    <br>
+    <span class="badge text-bg-primary">Primary</span>
+    <span class="badge text-bg-info">Info</span>
+    <span class="badge text-bg-secondary">Secondary</span>
+
+    <h3>Pill badges</h3>
+    Use the <strong>.rounded-pill</strong> utility class to make badges more rounded with a larger border-radius.
+    <br>
+
+    <span class="badge rounded-pill text-bg-primary">Primary</span>
+    <span class="badge rounded-pill text-bg-info">Info</span>
+    <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+
+    </p>
+  </div>
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
