@@ -1,0 +1,27 @@
+html {
+    background-color: turquoise;
+    font-family: Georgia, Times, serif;
+}
+
+button {
+    font-family: Georgia, Times, serif;
+}
+
+.delete:hover {
+    background-color: salmon;
+    border: 2px solid tomato;
+    color: darkred;
+    font-weight: bolder;
+}
+
+.add:hover {
+    background-color: lime;
+    border: 2px solid limegreen;
+    color: green;
+    font-weight: bolder;
+}
+
+div {
+    margin-left: 400px;
+    margin-top: 50px;
+}
