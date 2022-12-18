@@ -1,0 +1,29 @@
+h2,
+h3 {
+    font-style: italic;
+}
+
+h2 {
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h3 {
+    color: darkblue;
+}
+
+strong {
+    color: red;
+    background-color: rgb(252, 189, 177);
+    font-style: italic;
+}
+
+.main {
+    background-color: lightgray;
+    border: 50px ridge gray;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: Georgia, Times, serif;
+}
