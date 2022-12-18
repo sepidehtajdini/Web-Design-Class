@@ -1,0 +1,25 @@
+body {
+    background-color: lightpink;
+    font-family: Georgia, Times, serif;
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+    border: 2px solid purple
+}
+
+h4 {
+    color: rgb(177, 9, 98);
+    text-align: center;
+}
+
+strong {
+    color: deeppink
+}
+
+.main {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
