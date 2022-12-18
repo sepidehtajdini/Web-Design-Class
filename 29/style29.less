@@ -1,0 +1,78 @@
+.base(@color, @b-color) {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    position: relative;
+    box-sizing: border-box;
+    color: @color;
+    border: 1px solid @b-color;
+
+    a {
+        font-weight: bold;
+        color: @color;
+        margin-left: 5px;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.25rem 1rem;
+        z-index: 2;
+        box-sizing: content-box;
+        width: 1em;
+        height: 1em;
+        background: transparent url("./close.svg") center/1em auto no-repeat;
+        border-radius: 0.375rem;
+        border: 0;
+
+        button:not(:disabled) {
+            cursor: pointer;
+        }
+
+        &:focus {
+            box-shadow: 0 0 3px 3px @b-color;
+        }
+    }
+}
+
+.alert-primary {
+    .base(#084298, #b6d4fe);
+    background-color: #cfe2ff;
+}
+
+.alert-secondary {
+    .base(#41464b, #d3d6d8);
+    background-color: #e2e3e5;
+}
+
+.alert-info {
+    .base(#055160, #b6effb);
+    background-color: #cff4fc;
+}
+
+.alert-warning {
+    .base(#664d03, #ffecb5);
+    background-color: #fff3cd;
+}
+
+.alert-danger {
+    .base(#842029, #f5c2c7);
+    background-color: #f8d7da;
+}
+
+.alert-success {
+    .base(#0f5132, #badbcc);
+    background-color: #d1e7dd;
+}
+
+.alert-dark {
+    .base(#141619, #bcbebf);
+    background-color: #d3d3d4;
+}
+
+.alert-light {
+    .base(#636464, #fdfdfe);
+    background-color: #fefefe;
+}
