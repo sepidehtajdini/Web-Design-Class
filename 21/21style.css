@@ -1,0 +1,39 @@
+html {
+    background-color: rgb(162, 204, 91);
+    font-family: Georgia, Times, serif;
+}
+
+.add,
+.delete {
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.add {
+    color: darkgreen;
+    border: 2px solid rgb(15, 87, 47);
+    background-color: mediumseagreen;
+}
+
+div {
+    margin-left: 500px;
+}
+
+.delete {
+    color: darkred;
+    border: 2px solid darkred;
+    background-color: tomato;
+}
+
+.delete:hover {
+    background-color: rgb(245, 39, 39);
+    color: black;
+    font-weight: bolder;
+}
+
+.add:hover {
+    background-color: rgb(4, 128, 60);
+    color: black;
+    font-weight: bolder;
+}
