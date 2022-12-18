@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style15.css">
+    <title>Session | 15</title>
+</head>
+
+<body>
+    <script>
+        alert("Right click and open inspect")
+        let i
+        function searchingInArray(x, y) {
+            for (i = 0; i < x.length; i++) {
+                if (x[i] === y) {
+                    console.log("true, it is array number", i);
+                    return true;
+                }
+
+                else {
+                    if (i < x.length - 1) { console.log("Searching..."); }
+                    else { console.log("false"); return false; }
+                }
+
+            }
+        }
+
+        let names = ["Zahra", "Ahmad", "Zhaleh", "Pooria", "Ali", "Sara"]
+        let er = "Pooria";
+        searchingInArray(names, er);
+
+        let u = ["k", "Q", "c", "f"];
+        let o = "j";
+        searchingInArray(u, o);
+
+
+
+        i = 0
+        function findingInArray(x, y) {
+            while (i < x.length) {
+
+
+                if (x[i] === y) { console.log("TRUE, it's array number", i); return true; }
+                else {
+
+                    if (i < x.length - 1) { console.log("SEARCHING...") }
+                    else { console.log("FALSE"); return false; }
+                }
+                i++;
+            }
+        }
+
+        findingInArray(u, o)
+
+        findingInArray(names, er)
+    </script>
+</body>
+
+</html>
