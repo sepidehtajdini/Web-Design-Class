@@ -1,0 +1,47 @@
+body {
+    background-color: blueviolet;
+    font-family: Georgia, Times, serif;
+}
+
+h2 {
+    color: rgb(247, 56, 94);
+    text-shadow: -2px -2px 2px salmon;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(110, 40, 54)
+}
+
+strong {
+    color: crimson;
+    font-style: italic;
+}
+
+.main {
+    background-color: rgb(247, 157, 172);
+    width: 900px;
+    margin: auto;
+    border: 20px ridge violet
+}
+
+ul {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.list-group {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.close {
+    display: inline;
+    width: 150px;
+    background-color: salmon;
+    border: 2px solid rgb(252, 85, 67);
+    border-radius: 17%;
+    margin-left: 300px;
+}
