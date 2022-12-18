@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style22.css">
+    <title>Math Object Properties</title>
+</head>
+
+<body>
+    <h2>Math.log10(x)</h2>
+    <p>
+        <b>Math.log10(x)</b> uses the base 10 to return the logarithm of a given number (x). <br>
+        <em>Note:</em> If the parameter value is positive infinity, then the log() returns positive infinity. <br>
+        If the parameter value is NaN or negative infinity, then the log() function returns NaN . <br>
+        for example: <br>
+        <code>Math.log10(1000);</code> <br>
+        <code>the result is: 3</code> <br>
+        <img src="./img/logarithm.png" alt="a picture of logarithm diagram">
+    </p>
+    <h2>Math.max(x,y,z,...,n)</h2>
+    <p>
+        <b>Math.max()</b> can be used to find the highest value in a list of arguments: <br>
+        for example: <br>
+        <code>Math.max(100, -2, 56, 19.75, -163)</code> <br>
+        <code>the result is: 100</code>
+    </p>
+    <h2>Math.min(x,y,z,...,n)</h2>
+    <p>
+        <b>Math.min()</b> can be used to find the lowest value in a list of arguments: <br>
+        for example: <br>
+        <code>Math.min(0, 150, 30, 20, -8, -200);</code><br>
+        <code>the result is: -200</code>
+    </p>
+    <h2>Math.pow(x,y)</h2>
+    <p>
+        <b>Math.pow(x, y)</b> returns the value of x to the power of y: <br>
+        for example: <br>
+        <code>Math.pow(2,3);</code> <br>
+        <code>the result is: 8</code>
+    </p>
+    <h2>Math.random()</h2>
+    <p>
+        <b>Math.random()</b> function returns a floating-point, pseudo-random number in the range 0 to less than 1
+        (inclusive of 0, but not 1) with approximately uniform distribution. <br>
+        for example: <br>
+        <code>Math.random();</code> <br>
+        <code>the result is: 0.5878652912512752</code> <br>
+        For getting a random number between two values: <br>
+        <code>function getRandom(min, max) {
+            return Math.random() * (max - min) + min;
+          }</code> <br>
+        What's the usage? <br>
+        1-Making a random password <br>
+        2-In designing a game (i.e manch) in which you need to have a random number (such as throwing dice)
+
+    </p>
+    <script src="./script22.js"></script>
+</body>
+
+</html>
