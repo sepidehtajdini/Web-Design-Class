@@ -1,0 +1,44 @@
+html {
+    background-color: turquoise;
+}
+
+table {
+    border: 2px solid black;
+    font-family: Georgia, Times, serif;
+    margin: auto;
+    margin-top: 50px;
+}
+
+th {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: rgb(77, 76, 76);
+    ;
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+}
+
+td {
+    border: 2px solid black;
+    padding: 3px;
+}
+
+#index_0 {
+    background-color: dimgrey;
+}
+
+#index_1 {
+    background-color: grey;
+}
+
+#index_2 {
+    background-color: rgb(153, 153, 153);
+}
+
+#index_3 {
+    background-color: rgb(175, 175, 175);
+}
+
+#index_4 {
+    background-color: lightgrey
+}
