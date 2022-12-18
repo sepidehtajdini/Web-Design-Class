@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./style26.css">
+  <title>Session | 26</title>
+</head>
+
+<body>
+  <div class="main">
+    <h2>Navbar</h2>
+    <p>
+      Use <strong>.navbar</strong> with <strong>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</strong>. <br>
+      A responsive light-themed(<strong>.bg-light</strong>) navbar that automatically collapses at the xxl breakpoint:
+    <nav class="navbar navbar-expand-xxl bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h4>Image and text</h4>
+    Replace the text within the <strong>.navbar-brand</strong> with an <strong>img</strong>.
+    Note the addition of <strong>.d-inline-block</strong> and <strong>.align-text-top </strong>
+    on the <strong>img</strong>:
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../favicon/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          My navbar
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h4>Color schemes</h4>
+    Add favourite background color to the style:
+    <nav class="navbar navbar-expand-md" style="background-color: teal;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../favicon/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          My navbar
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h4>Forms</h4>
+    You can use the <strong>form</strong> element as the container(instead of div) and save some HTML:
+    <nav class="navbar bg-light">
+      <form class="container-fluid">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+      </form>
+    </nav>
+    <h4>Placement</h4>
+    Add one of the classes below to the nav tag:
+    <ul>
+      <li><strong>.fixed-top</strong> </li>
+      <li><strong>.fixed-bottom</strong></li>
+      <li><strong>.sticky-top</strong></li>
+      <li><strong>.sticky-bottom</strong></li>
+    </ul>
+    <h4>Scrolling</h4>
+    Add <strong>.navbar-nav-scroll</strong> to a <strong>.navbar-nav</strong>. <br>
+    For example with <strong>style="--bs-scroll-height: 100px;"</strong>.
+    <br>
+    <h4>Offcanvas</h4>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </p>
+    <h2>List group</h2>
+    <p>
+    <h4>Unordered list</h4>
+    Use <strong>.list-group</strong> and <strong>.list-group-item</strong>:
+    <ul class="list-group">
+      <li class="list-group-item">first</li>
+      <li class="list-group-item">second</li>
+      <li class="list-group-item">third</li>
+    </ul>
+    <hr>
+    For active items, add <strong>.active</strong> or <strong>.disabled</strong> to a
+    <strong>.list-group-item</strong>:
+    <ul class="list-group">
+      <li class="list-group-item active">Active</li>
+      <li class="list-group-item">second</li>
+      <li class="list-group-item disabled">disabled</li>
+    </ul>
+    <hr>
+    For actionable list group items, use <strong>a </strong> or <strong>button</strong> and
+    <strong>.list-group-item-action</strong>:
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        current link
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">second link</a>
+      <a class="list-group-item list-group-item-action disabled">disabled link</a>
+    </div>
+    <hr>
+    Remove some borders and rounded corners with <strong>.list-group-flush</strong>:
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+    <hr>
+    <h4>Ordered list</h4>
+    Use <strong>.list-group-numbered </strong>:
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">first</li>
+      <li class="list-group-item">second</li>
+      <li class="list-group-item">third</li>
+    </ol>
+    <hr>
+    For horizontal listgroups, add <strong>.list-group-horizontal</strong>:
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">first</li>
+      <li class="list-group-item">second</li>
+      <li class="list-group-item">third</li>
+    </ul>
+    <hr>
+    For colorful listgroups, add <strong>.list-group-item-{color}</strong> primary or secondary,warning,..:
+    <ul class="list-group">
+      <li class="list-group-item">simple</li>
+      <li class="list-group-item list-group-item-success">success</li>
+      <li class="list-group-item list-group-item-warning">warning</li>
+    </ul>
+    <hr>
+    For Checkboxes and radios, use <strong>.form-check-input</strong> in input:
+    <ul class="list-group">
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+        First checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+        Second checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+        Third checkbox
+      </li>
+    </ul>
+
+    </p>
+    <h2>Close button</h2>
+    <p>
+    <div class="close"><strong>.btn-close</strong>
+      <button type="button" class="btn-close" aria-label="Close"></button>
+    </div>
+    <br>
+    <div class="close"><strong>disabled</strong>
+      <button type="button" class="btn-close" disabled aria-label="Close"></button>
+    </div>
+    <br>
+    <div class="close"><strong>.btn-close-white</strong>
+      <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+    </div>
+    <br>
+    </p>
+  </div>
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
