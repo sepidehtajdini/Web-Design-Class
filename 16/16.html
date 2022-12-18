@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style16.css">
+    <title>shift unshift map</title>
+</head>
+
+<body>
+    <div>
+        <h2>متد شیفت ()shift</h2>
+        <ul>
+            <li>متد ()shift اولین عنصر آرایه را حذف کرده و تمام عنصرهای دیگر را به اول آرایه شیفت می‌دهد. <br>
+                <code dir="ltr">
+            const miveha=["sib","golabi","porteghal","kiwi"]; <br>
+            miveha.shift(); <br>
+        RESULT: miveha=["golabi","porteghal","kiwi"]</code>
+            </li>
+            <li> متد شیفت می‌تواند رشته یا عنصری‌ که جابجا شده بود را برگرداند یا return کند. <br>
+                <code dir="ltr">
+                const miveha=["sib","golabi","porteghal","kiwi"]; <br>
+                let X=miveha.shift(); <br>
+            RESULT: X="sib"</code>
+            </li>
+        </ul>
+        <h3> تفاوت متد شیفت با متد پاپ ()pop چیست؟ </h3>
+        <ol>
+            <li>شیفت اولین عنصر آرایه و پاپ آخرین عنصر آرایه را حذف می‌کند</li>
+            <li>اگر آرایه خالی باشد هر دو متد پاپ و شیفت عبارت تعریف نشده را برمی‌گردانند، اما اگر تنها یک عنصر در آرایه
+                وجود داشته باشد؛ پاپ همان عنصر را برمیگرداند درحالیکه شیفت تعریف نشده برمی‌گرداند.</li>
+        </ol>
+        <h2>متد آن‌شیفت ()unshift</h2>
+        <ul>
+            <li>متد ()unshift یک عنصر جدید به آرایه اضافه می‌کند (در ابتدای آرایه)، و عنصرهای قدیمی‌تر را یک خانه به جلو
+                منتقل می‌کند.<br>
+                در انتها متد ()unshift طول آرایه‌ی جدید را برمی‌گرداند. <br>
+                <code dir="ltr">
+            const miveha=["sib","golabi","porteghal","kiwi"]; <br>
+            miveha.unshift("limoo"); <br>
+            RESULT: miveha=["limoo","sib","golabi","porteghal","kiwi"]</code>
+            </li>
+        </ul>
+        <h3>تفاوت متد آن‌شیفت با متد پوش ()push چیست؟</h3>
+        <ul>
+            <li>متد آن‌شیفت عنصر جدید را به ابتدای آرایه اضافه می‌کند درحالیکه متد پوش عنصر را به انتهای آرایه اضافه
+                می‌کند.</li>
+        </ul>
+        <h2>متد مپ ()map</h2>
+        <ul>
+            <li> این متد، یک سری عملیات روی هر کدام از عناصر آرایه اعمال کرده و خروجی را در یک آرایه جدید می‌ریزد. <br>
+                <code dir="ltr">
+                    const numbers =[5, 2, 25]; <br>
+                    const mulBy2 = numbers.map(item => item * 2); <br>
+                    RESULT: [10, 4, 50];
+                </code>
+            </li>
+            <li>درست شبیه ()find، این متد هم یک تابع به عنوان ورودی گرفته و خود فانکشن یا تابع ۳ آرگومان دارد. <br>
+                <code dir="ltr"> arr.map(function(element, index, arr) { });</code>
+            </li>
+            <li> مپ تابع را برای عناصر خالی اجرا نمی‌کند و آرایه اصلی را تغییر نمی‌دهد.</li>
+            <li>تابع داده شده به متد مپ می‌بایست همیشه خروجی (return) داشته باشد. در غیر این صورت خروجی برای عنصر درحال
+                پردازش undefined است.</li>
+        </ul>
+        ‌<h3>تفاوت متد مپ با متد فور ایچ ()forEach چیست؟</h3>
+        <ol>
+            <li>مقدار برگشتی: متد فور ایچ عبارت تعریف نشده برمی‌گرداند و مپ یک آرایه جدید با عناصر تبدیل شده
+                برمی‌گرداند. حتی اگر هر دو یک کار را انجام دهند، مقدار بازگشتی متفاوت باقی می‌ماند.</li>
+            <li>قابلیت ضمیمه کردن متدهای دیگر: مپ قابل زنجیره است. این به این معنی است که می‌توانید پس از اجرای متد مپ
+                روی یک آرایه، ()reduce()، sort()، filter و غیره را ضمیمه کنید. <br>
+                این کار را نمی‌شود با فور ایچ انجام داد زیرا تعریف نشده برمی‌گردد.</li>
+            <li>تغییرپذیری: متد ()map یک آرایه کاملاً جدید با عناصر تبدیل شده و همان مقدار داده را برمی‌گرداند. در مورد
+                ()forEach، حتی اگر تعریف نشده برگردد، آرایه اصلی را با callback تغییر می‌دهد.
+
+                بنابراین، به وضوح می‌بینیم که ()map بر تغییرناپذیری تکیه دارد و ()forEach یک متد mutator است.</li>
+            <li>سرعت عملکرد: سرعت عملکرد مپ به مراتب بالاتر از فور ایچ است. <br>
+                <code dir="ltr">
+                    const myAwesomeArray = [1, 2, 3, 4, 5]; <br>
+                    const startForEach = performance.now(); <br>
+                    myAwesomeArray.forEach(x => (x + x) * 10000000000); <br>
+                    const endForEach = performance.now(); <br>
+                    console.log(`Speed [forEach]: ${endForEach - startForEach} miliseconds`); <br><br>
+
+                    const startMap = performance.now(); <br>
+                    myAwesomeArray.map(x => (x + x) * 10000000000); <br>
+                    const endMap = performance.now(); <br>
+                    console.log(`Speed [map]: ${endMap - startMap} miliseconds`);
+                </code>
+            </li>
+        </ol>
+        <img src="./map-foreach.png" alt="a screenshot of my laptop">
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+        const golha = ["rose", "maryam", "laleh", "yas"];
+        golha.unshift("mikhak", "niloofar");
+        console.log(golha);
+
+        const derakhtha = ["baloot", "kaj", "chenar", "senowbar"];
+        derakhtha.shift();
+        console.log(derakhtha);
+
+        function myFunction(num) { return num * 2; };
+
+        const numbers = [5, 15, 25, 35];
+        console.log(numbers.map(myFunction));
+    </script>
+</body>
+
+</html>
