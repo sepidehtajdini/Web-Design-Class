@@ -1,0 +1,33 @@
+html {
+    background-color: springgreen;
+}
+
+h2 {
+    width: 900px;
+    color: rgb(41, 41, 41);
+    text-align: center;
+    border: 2px dashed seagreen;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-shadow: 1px -1px 1px seagreen;
+    background-color: rgb(174, 240, 174);
+}
+
+p {
+    border: 2px dotted seagreen;
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+    background-color: lemonchiffon;
+    padding: 10px;
+}
+
+b {
+    color: rgb(199, 3, 3);
+    text-shadow: 1px 1px 5px coral;
+}
+
+code {
+    background-color: khaki
+}
