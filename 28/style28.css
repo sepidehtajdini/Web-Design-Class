@@ -1,0 +1,27 @@
+h4,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    background-color: aqua;
+    border: 2px solid teal;
+}
+
+h4 {
+    color: teal;
+    border: 1px dashed lightseagreen
+}
+
+.container {
+    background-color: lightcyan
+}
+
+body {
+    background-color: lightseagreen;
+}
+
+.one {
+    padding: 20px;
+    border: 2px solid black
+}
