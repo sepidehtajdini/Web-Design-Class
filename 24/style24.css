@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia, Times, serif;
+    background-color: gray;
+}
+
+.main {
+    border: 5px solid darkgray;
+    background-color: lightgray;
+    text-align: center;
+    width: 900px;
+    margin: auto
+}
+
+h1 {
+    color: black;
+    border: 1px dashed black
+}
+
+h3 {
+    color: blue
+}
+
+strong {
+    text-shadow: 2px 2px 2px lightcoral;
+    color: red;
+}
+
+table {
+    width: 900px;
+    text-align: center;
+    margin: auto
+}
+
+th {
+    border: 2px solid red;
+    color: red;
+}
+
+td {
+    border: 2px solid black
+}
