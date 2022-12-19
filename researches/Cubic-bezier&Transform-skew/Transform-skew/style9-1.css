@@ -1,0 +1,36 @@
+html {
+    background-image: url(./white-transparent-hexagonal-shapes-banner_1017-20590.jpg);
+}
+
+.normal {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    border: 2px solid violet;
+    margin-left: calc(50vw - 250px);
+    padding: 30px;
+}
+
+.skewed {
+    transform: skew(10deg, 10deg);
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: calc(50vw - 250px);
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+p {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
