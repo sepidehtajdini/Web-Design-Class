@@ -1,0 +1,45 @@
+html {
+    font-family: "Iranian Sans";
+    letter-spacing: -.8px;
+    background-color: rgb(48, 3, 48);
+}
+
+img {
+    float: left;
+}
+
+h3,
+h4 {
+    color: rgb(156, 0, 187)
+}
+
+div {
+    padding: 10px;
+    margin: auto;
+    padding: 15px;
+}
+
+.four {
+    background-color: rgb(190, 129, 190);
+    width: 700px;
+    height: 450px;
+}
+
+.three {
+    background-color: rgb(141, 63, 141);
+    width: 800px;
+    height: 480px;
+}
+
+.two {
+    background-color: rgb(102, 27, 102);
+    width: 900px;
+    height: 510px;
+}
+
+.one {
+    background-color: rgb(78, 7, 78);
+    width: 1000px;
+    height: 540px;
+    margin-top: 40px;
+}

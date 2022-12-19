@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style14.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <title>Recursive functions</title>
+
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three">
+                <div class="four">
+                    <p>
+                    <h3>توابع بازگشتی</h3>
+                    بازگشت (Recursion) تکنیکی است برای حل مسائل کامپیوتری با ایجاد تابعی که خود را صدا میزند تا به نتیجه
+                    دلخواه برسد.<br>
+                    هنگام خواندن تابع بازگشتی باید حالتی که شرط پایه بدون صدا زدن تابع اجرا میشود را پیدا کنید.<br>
+                    تابع بازگشتی باید حداقل یک شرط داشته باشد تا صدا زدن خود را متوقف کند در غیر این صورت به صدا زدن خود
+                    ادامه میدهد تا خطای stack overflow رخ دهد. <br>
+                    شرطی که تابع بازگشتی را از صدا زدن خود منع میکند با عنوان شرط پایه (یا base case) شناخته میشود. در
+                    تابع زیر شرط پایه زمانی است که num بزرگتر از 5 باشد. <br>
+                    <img src="./Screenshot (211).png"
+                        alt="a screenshot of my pc for  showing factorial reursive function">
+                    <h3>چگونه تابع بازگشتی بنویسیم؟</h3>
+                    نوشتن تابع بازگشتی نیز تقریبا مانند خواندن آن است:<br>
+                    <ul>
+                        <li>تابعی معمولی بنویسید که شرط پایه دارد</li>
+                        <li>آرگومان هایی به تابع بدهید که فورا شرط پایه اجرا شود</li>
+                        <li>آرگومان بعدی که شرط پایه را اجرا میکند به تابع بدهید</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function log(num) {
+            if (num > 5) { return; }
+            console.log(num);
+            log(num + 1);
+        }
+        log(1);
+
+        function factorial(num) {
+            if (num === 1) { return num; }
+            return num * factorial(num - 1)
+        }
+        console.log(factorial(5));
+    </script>
+</body>
+
+</html>
