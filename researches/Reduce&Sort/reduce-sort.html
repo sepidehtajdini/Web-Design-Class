@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style20.css">
+    <title>Reduce - Sort</title>
+</head>
+
+<body>
+    <div>
+        <h2>Reduce() method</h2>
+        <ul>
+            <li>The <em>reduce()</em> method executes a reducer function for array element.</li>
+            <li>It returns a single value: the function's accumulated result.</li>
+            <li>It doesn't execute the function for empty array elements.</li>
+            <li>It doesn't change the original array.</li>
+            <li>Syntax: <em>array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</em></li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>function()</td>
+                    <td>
+                        <b>Required</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>
+                        <b>Required</b> <br>
+                        The initialValue, or the previously returned value of the function.
+                    </td>
+                </tr>
+                <tr>
+                    <td>currentValue</td>
+                    <td><b>Required</b> <br>
+                        The value of the current element.</td>
+                </tr>
+                <tr>
+                    <td>currentIndex</td>
+                    <td>Optional <br>
+                        The index of the current element.</td>
+                </tr>
+                <tr>
+                    <td>arr</td>
+                    <td>Optional<br>
+                        The array the current element belongs to.</td>
+                </tr>
+                <tr>
+                    <td>initialValue</td>
+                    <td>Optional <br>
+                        A value to be passed to the function as the initial value.</td>
+                </tr>
+                <tr>
+                    <td>Return Value</td>
+                    <td>The accumulated result from the last call of the callback function.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Sort() method</h2>
+        <ul>
+            <li>The <em>sort()</em> method sorts an array alphabetically:</li>
+            <li>By default, this method sorts values as strings. This works well for strings ("Apple" comes before
+                "Banana").
+                If numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+                Because of this, the <em>sort()</em> method will produce incorrect result when sorting numbers.
+                You can fix this by providing a compare function.
+            </li>
+            <li>
+                <ul> Compare function:
+                    <li>The purpose of the compare function is to define an alternative sort order.</li>
+                    <li>The compare function should return a negative, zero, or positive value, depending on the
+                        arguments:</li>
+                    <li><code>function(a, b){return a - b}</code></li>
+                    <li>When the <em>sort()</em> function compares two values, it sends the values to the compare
+                        function, and sorts the values according to the returned (negative, zero, positive) value.</li>
+                    <li>If the result is negative "a" is sorted before "b".</li>
+                    <li>If the result is positive "b" is sorted before "a".</li>
+                    <li>If the result is 0 no changes are done with the sort order of the two values.</li>
+                    <li>
+                        Example: The compare function compares all the values in the array, two values at a time (a, b).
+                        <br>
+                        When comparing 40 and 100, the sort() method calls the compare function(40, 100). <br>
+                        The function calculates 40 - 100 (a - b), and since the result is negative (-60), <br>
+                        the sort function will sort 40 as a value lower than 100.
+                    </li>
+                    <li>
+                        <ul>Sorting object arrays:
+                            <li>Even if objects have properties of different data types, the <em>sort()</em> method can
+                                be used to sort the array.</li>
+                            <li>The solution is to write a compare function to compare the property values:</li>
+                            <li><code>const cars = [
+                                {type:"Volvo", year:2016},
+                                {type:"Saab", year:2001},
+                                {type:"BMW", year:2010}
+                              ];</code>
+                            </li>
+                            <li><code> cars.sort(function(a, b){return a.year - b.year});</code></li>
+                            <li> <code>Result: "Saab", year:2001,"BMW", year:2010,"Volvo", year:2016 </code></li>
+                        </ul>
+                    </li>
+                    <li>Syntax: <em>Array.sort(function(x,y))</em></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        // Subtract the numbers in the array, starting from the left:
+        const numbers = [175, 50, 25];
+        let result = numbers.reduce(function (total, num) {
+            return total - num;
+        });
+        console.log(result);
+        // Sorting car objects on type:
+        const cars = [
+            { type: "Volvo", year: 2016 },
+            { type: "Saab", year: 2001 },
+            { type: "BMW", year: 2010 }];
+
+        displayCars();
+
+        function myFunction() {
+            cars.sort(function (a, b) {
+                let x = a.type.toLowerCase();
+                let y = b.type.toLowerCase();
+                if (x < y) { return -1; }
+                if (x > y) { return 1; }
+                return 0
+            });
+            displayCars();
+        }
+
+        function displayCars() {
+            let result =
+                cars[0].type + " " + cars[0].year + " - " +
+                cars[1].type + " " + cars[1].year + " - " +
+                cars[2].type + " " + cars[2].year;
+            console.log(result)
+        }
+    </script>
+</body>
+
+</html>

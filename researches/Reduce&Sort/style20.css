@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(191, 184, 235);
+    font-family: Georgia, Times, serif;
+}
+
+div {
+    height: 1200px;
+    width: 800px;
+    margin: auto;
+}
+
+table {
+    border: 2px solid black;
+    background-color: darkslateblue;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+    background-color: rgb(133, 121, 207);
+}
+
+b {
+    color: teal;
+    text-shadow: -3px -3px 5px turquoise;
+}
+
+em {
+    color: crimson;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(41, 35, 78);
+}
