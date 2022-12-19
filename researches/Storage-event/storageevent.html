@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style21.css">
+    <title>Storage Event</title>
+</head>
+
+<body>
+    <h2>Window:Storage Event</h2>
+    <p>The storage event of the Window interface fires when a storage area (localStorage) has been modified in the
+        context of another document.</p>
+    <h3>Syntax:</h3>
+    <p>
+        Use the event name in methods like addEventListener(), or set an event handler property. <br>
+        <code>addEventListener('storage', event => { });
+    onstorage = event => { };</code>
+    </p>
+    <h3>Constructor:</h3>
+    <p>StorageEvent() <br>
+        Returns a newly constructed StorageEvent object.
+        <code>window.addEventListener("storage", myFunction);
+
+        function myFunction(event) {
+          let x = event.storageArea;
+          document.getElementById("demo").innerHTML = x;
+        }</code>
+    </p>
+    <h3>Properties:</h3>
+    <p>
+    <ul>
+        <li><b>key:</b>
+            <ul>
+                <li>Returns a DOMString that represents the key changed.</li>
+                <li>The key attribute is null when the change is caused by the storage clear() method.</li>
+            </ul>
+        </li>
+        <li><b>newValue:</b>
+            <ul>
+                <li>Returns a DOMString with the new value of the key.</li>
+                <li> This value is null when the change has been invoked by storage clear() method, or the key has been
+                    removed from the storage.</li>
+            </ul>
+        </li>
+        <li><b>oldValue:</b>
+            <ul>
+                <li>Returns a DOMString with the original value of the key.</li>
+                <li>This value is null when the key has been newly added and therefore doesn't have any previous value.
+                </li>
+            </ul>
+        </li>
+        <li><b>storageArea:</b>
+            <ul>
+                <li>Returns a Storage object that represents the storage that was affected.</li>
+            </ul>
+        </li>
+        <li><b>url:</b>
+            <ul>
+                <li>Returns DOMString with the URL of the document whose key changed.</li>
+            </ul>
+        </li>
+    </ul>
+    </p>
+    <h3>Event handler aliases:</h3>
+    <p>In addition to the Window interface, the event handler property onstorage is also available on the following
+        targets:
+    <ul>
+        <li>HTMLBodyElement</li>
+        <li>HTMLFrameSetElement</li>
+        <li>SVGSVGElement</li>
+    </ul>
+    </p>
+    <h3>Example:</h3>
+    <p>Log the sampleList item to the console when the storage event fires: <br>
+        <code>
+        window.addEventListener('storage', () => {
+            // When local storage changes, dump the list to
+            // the console.
+            console.log(JSON.parse(window.localStorage.getItem('sampleList')));
+          });</code> <br>
+        <code>
+          The same action can be achieved using the onstorage event handler property:
+          
+          window.onstorage = () => {
+            // When local storage changes, dump the list to
+            // the console.
+            console.log(JSON.parse(window.localStorage.getItem('sampleList')));
+          };
+    </code> <br>
+        <code> window.onstorage = function(e) {
+        console.log('The ' + e.key +
+          ' key has been changed from ' + e.oldValue +
+          ' to ' + e.newValue + '.')};</code>
+    </p>
+</body>
+
+</html>
