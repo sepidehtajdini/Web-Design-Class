@@ -1,0 +1,60 @@
+html {
+    background-color: rgb(255, 255, 143);
+    font-family: Georgia, Times, serif;
+}
+
+.main {
+    background-color: olivedrab;
+    width: 1000px;
+    margin: auto;
+    border: 50px ridge darkolivegreen;
+    padding: 10px;
+}
+
+h2,
+.inner,
+.main {
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 2px -2px 1px rgb(139, 139, 39);
+    color: black
+}
+
+.inner {
+    width: 750px;
+    background-color: rgb(177, 177, 69);
+    border: 30px ridge rgb(139, 139, 39);
+    padding: 15px;
+    margin-left: 80px
+}
+
+table {
+    background-color: rgb(215, 250, 150);
+    border: 2px solid black;
+    margin: auto
+}
+
+td,
+th {
+    border: 1px dashed black;
+}
+
+th {
+    background-color: rgb(165, 165, 70);
+}
+
+code {
+    background-color: rgb(255, 255, 143)
+}
+
+em {
+    color: green;
+    text-shadow: 2px 2px 1px lime;
+}
+
+strong {
+    color: crimson;
+    font-style: italic;
+}
