@@ -1,0 +1,31 @@
+html {
+    background-color: pink;
+    margin: auto;
+}
+
+li {
+    font-size: 1.1rem;
+}
+
+h2 {
+    color: deeppink;
+    margin-right: 600px;
+    border: 2px solid deeppink;
+    display: inline-block;
+    ;
+}
+
+code {
+    font-weight: bold;
+    background-color: honeydew;
+}
+
+div {
+    margin-right: 300px;
+}
+
+.summ {
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px gray;
+}

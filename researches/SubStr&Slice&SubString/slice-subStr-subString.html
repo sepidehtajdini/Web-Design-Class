@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style17.css">
+    <title>String: Slice-SubStr-SubString</title>
+</head>
+
+<body>
+    <h2>متد ()SubStr</h2>
+    <div>
+        <ul>
+            <li>متد substr بخشی از یک رشته (string) را استخراج می‌کند.</li>
+            <li>این روش از یک موقعیت مشخص شروع می‌شود و تعداد مشخصی از کاراکترها را برمی‌گرداند</li>
+            <li>این متد رشته (string) اصلی را تغییر نمی‌دهد.</li>
+            <li>برای استخراج کاراکترها از انتهای رشته، از موقعیت شروع منفی استفاده کنید.</li>
+            <li>Syntax: string.substr(start, length)</li>
+            <li>پارامترها:
+                <ol>
+                    <li>شروع (Start):
+                        <ul>
+                            <li>این پارامتر ضروری است.</li>
+                            <li>کاراکتر اول در index₀ است.</li>
+                            <li>اگر Start بزرگتر از طول String باشد، SubStr عبارت "" را برمی‌گرداند.</li>
+                            <li>اگر Start منفی باشد، SubStr از انتهای رشته حساب می‌شود.</li>
+                        </ul>
+                    </li><br>
+                    <li>طول (Length):
+                        <ul>
+                            <li>این پارامتر اختیاری است.</li>
+                            <li>در صورت حذف، بقیه‌ی رشته (String) را استخراج می‌کند.</li>
+                        </ul>
+                    </li> <br>
+                    <li>مقدار بازگشتی (Return Value):
+                        <ul>
+                            <li> یک رشته (String) است.</li>
+                            <li> این رشته حاوی قسمت استخراج شده است</li>
+                            <li>اگر طول 0 یا منفی باشد، یک رشته خالی برگردانده می‌شود.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>چند مثال: <br>
+                <code dir="ltr">
+                let text = "Hello world!"; <br>
+                let result = text.substr(0, 1); <br>
+                Result: H<br>
+        
+                let result = text.substr(1, 4); <br>
+                Result: ello<br>
+
+                let result = text.substr(text.length-1, 1); <br>
+                Result: !<br>
+            
+                let result = text.substr(-6, 6); <br>
+                Result: world!
+            </code>
+            </li>
+        </ul>
+    </div>
+    <h2>متد ()Slice</h2>
+    <div>
+        <ul>
+            <li>متد Slice بخشی از یک رشته (String) را استخراج می‌کند.</li>
+            <li>این متد قسمت استخراج شده را در یک رشته جدید برمی‌گرداند.</li>
+            <li>Slice رشته (String) اصلی را تغییر نمی دهد.</li>
+            <li>پارامترهای شروع و پایان بخشی از رشته را برای استخراج مشخص می‌کند.</li>
+            <li>موقعیت اول 0 است، دومی 1 است، ...</li>
+            <li> اعداد منفی، از انتهای رشته شروع به انتخاب می‌کنند.</li>
+            <li>Syntax: string.slice(start, end)</li>
+            <li>پارامترها:
+                <ol>
+                    <li>شروع (Start):
+                        <ul>
+                            <li>این پارامتر ضروری است.</li>
+                            <li>اولین کاراکتر 0 است.</li>
+                        </ul>
+                    </li>
+                    <li>پایان (End):
+                        <ul>
+                            <li>این پارامتر اختیاری است.</li>
+                            <li>موقعیت پایانی (تا، اما نه شامل).</li>
+                            <li>پیش فرض طول رشته (String) است.</li>
+                        </ul>
+                    </li>
+                    <li>مقدار بازگشتی (Return Value):
+                        <ul>
+                            <li>یک رشته (String) شامل بخش استخراج شده از رشته‌ی اصلی می‌باشد.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                چند مثال: <br>
+                <code dir="ltr">
+                let text = "Hello world!"; <br>
+                let result = text.slice(1, 4); <br>           
+                Result: ell<br>
+        
+                let result = text.slice(3); <br>
+                Result: lo world!<br>
+
+                let result = text.slice(-1); <br>
+                Result: !<br>
+            
+                let result = text.slice(0); <br>
+                Result: Hello world!
+            </code>
+            </li>
+        </ul>
+    </div>
+    <h2>متد ()SubString</h2>
+    <div>
+        <ul>
+            <li>متد ()substring کاراکترها را از میان دو کاراکتر از یک رشته استخراج می‌کند و رشته فرعی را برمی‌گرداند.
+            </li>
+            <li>این متد کاراکترها را از شروع تا پایان استخراج می‌کند.</li>
+            <li> این متد رشته (String) اصلی را تغییر نمی‌دهد.</li>
+            <li>اگر شروع بزرگتر از پایان باشد، آرگومان‌ها جابجا می‌شوند: (4، 1) = (1، 4).</li>
+            <li> اگر مقادیر شروع و پایان کوچکتر از 0 باشند، همانند خود 0 عمل می‌کنند.</li>
+            <li>Syntax: string.substring(start, end)</li>
+            <li>پارامترها:
+                <ol>
+                    <li>شروع (Start):
+                        <ul>
+                            <li>این پارامتر ضروری است و بیانگر نقطه‌ی شروع است.</li>
+                            <li> اولین کاراکتر در index₀ است.</li>
+                        </ul>
+                    </li>
+                    <li>پایان (End):
+                        <ul>
+                            <li>این پارامتر اختیاری است.</li>
+                            <li>موقعیت پایانی (تا، اما نه شامل).</li>
+                            <li>در صورت حذف، بقیه‌ی رشته (String) را استخراج می‌کند.</li>
+                        </ul>
+                    </li>
+                    <li>مقدار بازگشتی (Return Value):
+                        <ul>
+                            <li> رشته‌ای حاوی کاراکترهای استخراج شده است.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>چند مثال: <br>
+                <code dir="ltr">
+                let text = "Hello world!"; <br>
+                let result = text.substring(1, 4); <br>
+                Result: ell <br>
+                let result = text.substring(-3); <br>
+                Result: Hello world! <br>
+                let result = text.substring(0, 1); <br>
+                Result: H <br>
+                let result = text.substring(text.length - 1); <br>
+                Result: ! <br>
+            </code>
+            </li>
+        </ul>
+    </div>
+    <h2>خلاصه</h2>
+    <div class="summ">
+        <ol>
+            <li>متد ()substring شماره index شروع و پایان را دریافت می‌کند اما خروجی شامل ایندکس پایانی نمی‌شود.</li>
+            <li>در متد ()substring اگر Start_Index بزرگتر از End_Index
+                باشد، آرگومان‌ها <br> خودبخود جابجا می‌شوند و در نهایت خروجی
+                نمایش داده می‌شود
+                اما متد ()slice چیزی در خروجی نشان نمی‌دهد.</li>
+            <li>اگر از شماره ایندکس منفی ( مثلا ۱- ) در متد ()substring استفاده شود، <br> برنامه آن را بعنوان عدد صفر
+                درنظر می‌گیرد.</li>
+            <li> متد ()Substr فقط شماره ایندکس شروع (و نه پایان) و سپس یک طول برای تعداد کاراکترهایی
+                <br> که
+                قرار است استخراج شوند، دریافت می‌کند.
+            </li>
+            <li>متد ()Substr یک متد قدیمی می‌باشد و استفاده از آن پیشنهاد نمی‌شود. <br> بهتر است از متد ()substring
+                استفاده شود.
+            </li>
+        </ol>
+    </div>
+    <script>let text = "Hello world!";
+        let result = text.slice(1, 4);
+        console.log(result);
+        let result2 = text.substr(1, 4);
+        console.log(result2);
+        let result3 = text.substring(1, 4);
+        console.log(result3);
+    </script>
+</body>
+
+</html>
