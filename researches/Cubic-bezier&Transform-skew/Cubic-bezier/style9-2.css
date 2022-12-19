@@ -1,0 +1,70 @@
+html {
+    background-color: rgb(156, 156, 58);
+}
+
+.ease {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    background-image: url("./img/ease.png");
+    background-repeat: no-repeat;
+}
+
+.linear {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-image: url("./img/linear.png");
+    background-repeat: no-repeat;
+}
+
+.ease-in {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    background-repeat: no-repeat;
+    background-image: url("./img/ease-in.png");
+}
+
+.ease-out {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    background-repeat: no-repeat;
+    background-image: url("./img/ease-out.png");
+}
+
+.ease-in-out {
+    width: 100px;
+    height: 100px;
+    background-color: olive;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    background-repeat: no-repeat;
+    background-image: url("./img/ease-in-out.png");
+}
+
+div:hover {
+    width: 500px;
+    background-color: black;
+}
+
+h1,
+p {
+    color: black;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+}
