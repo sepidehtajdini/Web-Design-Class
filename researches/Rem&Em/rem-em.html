@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link href="./style4.css" rel="stylesheet">
+    <title> Research 4 </title>
+</head>
+
+<body>
+    <h1>Difference between <strong><em>em</em></strong> and <strong><em>rem</em></strong> units in CSS</h1>
+    <p>
+        <strong>While setting the size of any element in CSS, we have two choices.<br>
+            The first one is absolute units and the other is relative units.<br>
+            Absolute units are fixed and not relative to anything else. They are always identical in any case.
+            They involve <em><strong>cm, mm, px,</strong></em> etc.<br>
+            On the other side, relative units are relative to something else.
+            It may be the size of the parent element or the size of the main <strong><em>HTML</em></strong>.<br>
+            Relative units cover <strong><em>em, rem, vw, vh,</em></strong> etc. These are scalable units and helps in
+            responsive design.<br>
+            Many of us might get confused between the relative units, especially the em and the rem units.
+            Let’s break down the difference between those two.<br> Basically that both rem and em are scalable
+            and relative units of size, but with em, the unit is relative to the font size of its parent
+            element, while the rem unit is only relative to the root font
+            size of the HTML document. The <em><strong>“r”</strong></em> in rem stands for
+            <em><strong>“root”</strong></em>.
+        </strong>
+    </p>
+    <ol>
+        <li>
+            <strong>em Unit: The em unit allows setting the font size of an element relative to the font size of its
+                parent. When the size of the parent element changes, the size of the child changes automatically.
+                <br> Note: When em units are used on font-size property, the size is relative
+                to the font-size of the parent.
+                When used on other properties, it’s relative to the font-size of that element itself.
+                Here, only the first declaration takes the reference of the parent
+            </strong>
+        </li>
+        <li>
+            <strong>rem Unit: The rem is based upon the font-size value of the root element,
+                which is the html element. And if the html element doesn’t have a specified font-size,
+                the browser default value of 16px is used. So here only the value of
+                the root is considered, and there is no relation with a parent element.<br>
+                Unlike em, here size is relative for all declarations, not only first.
+
+            </strong>
+        </li>
+    </ol>
+    <img src="./rem-vs-em-css.jpg" alt="the difference between rem and em in css ">
+    <p><strong>Difference between em and rem unit is given below:</strong></p>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>em</th>
+                <th>rem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Relativity</strong></td>
+                <td><strong>em is relative to the font-size of its direct or nearest parent</strong></td>
+                <td><strong>rem is relative to the HTML (root) font-size</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Compounding Effect</strong></td>
+                <td><strong>May lead to a compounding effect</strong></td>
+                <td><strong>Does not lead to a compounding effect</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <strong>Hope you got a clear difference between the em and the rem units.
+            It is very easy to remember,
+            r in rem indicates root, is relative to the root <em><strong>(HTML) </strong></em>and em is relative to the
+            parent.</strong>
+    </p>
+</body>
+
+</html>
