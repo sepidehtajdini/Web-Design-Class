@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style23.css">
+    <title>Trim() & Splice()</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Splice() method</h2>
+        <div class="inner">
+            The <strong>splice() method</strong> adds and/or removes array elements, <br>
+            and overwrites the original array. <br> <br>
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Syntax</td>
+                    <td>array.splice(index, howmany, item1, ....., itemX)</td>
+                </tr>
+                <tr>
+                    <td>index</td>
+                    <td><em>Required</em> <br>
+                        The position to add/remove items. <br>
+                        Negative value defines the position from the end of the array. <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>howmany</td>
+                    <td>Optional <br>
+                        Number of items to be removed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>item1, ..., itemX</td>
+                    <td>Optional <br>
+                        New element(s) to be added.</td>
+                </tr>
+                <tr>
+                    <td>Return Value</td>
+                    <td>
+                        An array containing the removed items (if any).</td>
+                </tr>
+            </table>
+            <br>
+            <code>let companys = ["BMW", "Mercedes-Benz", "Iran khodro", "Toyota"];</code> <br>
+            <code>companys.splice(2, 1, "Ferrari", "Tesla");</code> <br>
+            <code>companys: ["BMW", "Mercedes-Benz", "Ferrari", "Tesla", "Toyota"];</code> <br>
+            <code>Result: ["Iran khodro"]</code>
+        </div>
+        <h2>Trim() method</h2>
+        <div class="inner">
+            The <strong>trim() method</strong> removes whitespace from both sides of a string; <br>
+            but it does'nt change the original string. <br>
+            <code>const text = "  today is sunny ";</code> <br>
+            <code>const result = text.trim();</code><br>
+            <code>Result: "today is sunny"</code>
+        </div>
+    </div>
+    <script>
+        const text = "              today is sunny    ";
+        console.log(text);
+        let result = text.trim();
+        console.log(result);
+        const companys = ["BMW", "Mercedes-Benz", "Iran khodro", "Toyota"];
+        result = companys.splice(2, 1, "Ferrari", "Tesla");
+        console.log(result);
+        console.log(companys);
+    </script>
+</body>
+
+</html>
