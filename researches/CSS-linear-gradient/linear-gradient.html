@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link href="./29style.css" rel="stylesheet">
+    <title>Linear gradient</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Linear gradient</h1>
+        CSS gradients let you display smooth transitions between two or more specified colors. <br>
+        CSS defines three types of gradients:
+        <ul>
+            <li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+            <li>Radial Gradients (defined by their center)</li>
+            <li>Conic Gradients (rotated around a center point)</li>
+        </ul>
+        For linear gradients, at least two color stops must be defined. <br>
+        Color stops are the colors you want to render smooth transitions among. <br>
+        You can also set a starting point and a direction (or an angle) along with the gradient effect. <br>
+        Syntax: <br>
+        <code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code>
+        <h4>Direction - Top to Bottom (default)</h4>
+        <div class="linear">direction: to left</div>
+        <br>
+        <div class="linear2">direction: to bottom left</div>
+        <h4>Using Angles</h4>
+        Syntax: <br>
+        <code>background-image: linear-gradient(angle, color-stop1, color-stop2);</code>
+        <div class="angle">angle:153deg</div>
+        <h4>Using Multiple Color Stops</h4>
+        <div class="multi">3color stops</div>
+        <h4>Repeating a linear-gradient</h4>
+        <code>repeating-linear-gradient(color, color2 X%, color3 Y%);</code>
+        <div class="repeating"></div>
+    </div>
+</body>
+
+</html>
