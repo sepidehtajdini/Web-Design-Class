@@ -1,0 +1,27 @@
+h1 {
+    color: hsl(170, 60%, 25%);
+}
+
+h1>em {
+    color: hsl(0, 40%, 50%)
+}
+
+P>em {
+    color: hsl(320, 100%, 20%, 0.5)
+}
+
+.green {
+    color: hsl(150, 100%, 30%)
+}
+
+.red {
+    color: hsl(0, 100%, 50%)
+}
+
+.blue {
+    color: hsl(240, 100%, 30%)
+}
+
+.hsl {
+    color: hsl(0, 40%, 50%)
+}
