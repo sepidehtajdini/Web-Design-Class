@@ -1,0 +1,27 @@
+html {
+    background-image: url("./bk-ground.jpg");
+    background-position: center;
+}
+
+.red {
+    color: red;
+}
+
+.teal {
+    color: teal;
+}
+
+.blue {
+    color: blue;
+}
+
+table {
+    margin:auto;
+    width: 50vw;
+    border: 4px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+thead {
+    background-color: lightsalmon;
+}
