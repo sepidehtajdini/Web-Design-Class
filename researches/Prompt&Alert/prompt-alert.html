@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style13.css">
+    <title>Prompt and Alert methods</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1> Prompt and alert methods</h1>
+        <p>The <strong>prompt()</strong> method displays a dialog box that prompts the user for input.
+            The <strong>prompt()</strong> method returns the input value if the user clicks
+            <strong>"OK"</strong>, otherwise it returns <strong>null</strong>.<br>
+            The <strong>alert()</strong> method displays an alert box with a message and an <strong>OK</strong> button.
+            The <strong>alert()</strong> method is used when you want information to come through to the user.
+        <h2>Notes:</h2>
+        1. A prompt box is used if you want the user to input a value.<br>
+        2. When a prompt box pops up, the user will have to click either <strong>"OK"</strong> or
+        <strong>"Cancel"</strong> to proceed.<br>
+        3. Do not overuse prompt or alert methods. They prevents the user from accessing other parts of the page until
+        the box is closed.</p>
+        <p></p>
+        <button onclick="myfunction();">Click me!</button>
+    </div>
+    <script>
+        alert("Hello\n     and \n    Welcome to this page!");
+        function myfunction() {
+            let person = prompt("Please tell us your name!", "Jensen Ackles");
+        }
+
+    </script>
+</body>
+
+</html>
