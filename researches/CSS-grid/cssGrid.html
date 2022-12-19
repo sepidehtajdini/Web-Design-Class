@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style-28.css">
+    <title>CSS Grid</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>CSS Grid</h2>
+        <div>
+            <ol>
+                <li>CSS Grid is opt-in <ul>
+                        <li>Disable the default grid system</li>
+                        <li><strong>$enable-grid-classes: false</strong></li>
+                        <li><strong>$enable-cssgrid: true</strong></li>
+                    </ul>
+                </li>
+                <li>Replace instances of <strong>.row</strong> with <strong>.grid</strong></li>
+                <li>Replace <strong>.col-*</strong> classes with <strong>.g-col-*</strong> classes</li>
+                <li>Set columns and gutter sizes via CSS variables</li>
+            </ol>
+            <h4>Key differences</h4>
+            <ul>
+                <li>The gap property replaces the horizontal padding from our default grid system and functions more
+                    like margin.</li>
+                <li>As such, unlike .rows, .grids have no negative margins and margin utilities cannot be used to change
+                    the grid gutters.</li>
+                <li>Inline and custom styles should be viewed as replacements for modifier classes (<strong>
+                        style="--bs-columns: 3;"</strong> vs <strong>class="row-cols-3"</strong> ).</li>
+                <li>Nesting works similarly, but may require you to reset your column counts on each instance of a
+                    nested .grid.</li>
+            </ul>
+            <h4>Examples</h4>
+            <img src="./img/Screenshot (213).png" alt="an Screenshot of my desktop">
+            <h4>Responsive</h4>
+            <img src="./img/Screenshot (214).png" alt="an Screenshot of my desktop">
+            <h4>Wrapping </h4>
+            <img src="./img/Screenshot (215).png" alt="an Screenshot of my desktop">
+            <h4>Starts</h4>
+            CSS Grid creates a grid template through styles that tell browsers to “start at this column” and “end at
+            this column.”
+            <br>
+            <strong>grid-column-start</strong> and <strong>grid-column-end</strong>classess.
+            <img src="./img/Screenshot (216).png" alt="an Screenshot of my desktop">
+            <h4>Auto columns </h4>
+            <img src="./img/Screenshot (217).png" alt="an Screenshot of my desktop">
+            <img src="./img/Screenshot (218).png" alt="an Screenshot of my desktop">
+            <h4>Nesting</h4>
+            <ul>
+                <li>We override the default number of columns with a local CSS variable: <strong>--bs-columns:
+                        3</strong>.</li>
+                <li> In the first auto-column, the column count is inherited and each column is one-third of the
+                    available width.</li>
+                <li>In the second auto-column, we’ve reset the column count on the nested <strong>.grid</strong> to 12
+                    (our default).
+                </li>
+                <li>The third auto-column has no nested content.</li>
+            </ul>
+            <img src="./img/Screenshot (221).png" alt="an Screenshot of my desktop">
+            <img src="./img/Screenshot (219).png" alt="an Screenshot of my desktop">
+            <h4>Columns and gaps</h4>
+            <img src="./img/Screenshot (222).png" alt="an Screenshot of my desktop">
+            <h4>Adding rows</h4>
+            <img src="./img/Screenshot (223).png" alt="an Screenshot of my desktop">
+            <h4>Gaps</h4>
+            <img src="./img/Screenshot (224).png" alt="an Screenshot of my desktop">
+        </div>
+    </div>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
