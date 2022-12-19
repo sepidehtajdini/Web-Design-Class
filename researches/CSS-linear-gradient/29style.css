@@ -1,0 +1,69 @@
+body {
+  background-image: linear-gradient(to right, #363636, white);
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  background-image: linear-gradient(to right, #004d4d, #1affff);
+  width: 900px;
+  margin-top: 100px;
+  border: 10px ridge #004d4d;
+}
+
+h1,
+h4 {
+  border: 2px solid black;
+}
+
+.linear {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to left, purple, violet);
+}
+
+.linear2 {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to bottom left, purple, violet);
+}
+
+.angle {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(153deg, purple, violet);
+}
+
+.multi {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(slateblue, purple, violet);
+}
+
+.repeating {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
+  width: 200px;
+  height: 200px;
+  background-image: repeating-linear-gradient(slateblue, purple 20%, violet 20%);
+}
