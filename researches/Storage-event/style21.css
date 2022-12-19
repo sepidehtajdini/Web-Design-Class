@@ -1,0 +1,33 @@
+html {
+    font-family: Georgia, Times, serif;
+    background-color: palegreen;
+}
+
+h2,
+h3 {
+    color: green;
+    text-shadow: 2px 2px lime;
+}
+
+h2 {
+    text-align: center
+}
+
+h3 {
+    margin-left: 100px;
+}
+
+code {
+    background-color: lightyellow;
+    font-weight: bold;
+}
+
+p,
+ul {
+    margin-left: 150px;
+}
+
+b {
+    color: darkblue;
+    text-shadow: 1px 2px lightslategray;
+}
