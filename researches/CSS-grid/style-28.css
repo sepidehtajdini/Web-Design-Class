@@ -1,0 +1,26 @@
+img {
+    margin:auto;
+    width:80vw;
+}
+
+h4 {
+    text-align: center;
+}
+
+h2 {
+    color: teal;
+    border: 2px solid teal;
+    text-align: center;
+    background-color: turquoise;
+}
+
+.container {
+    background-color: aquamarine;
+    border: 5px groove teal;
+    font-family: Georgia, Times, serif;
+}
+
+strong {
+    background-color: lightsalmon;
+    color: crimson;
+}
