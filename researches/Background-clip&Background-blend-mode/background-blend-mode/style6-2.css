@@ -1,0 +1,44 @@
+div {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 0;
+    left: 32%;
+    background-repeat: repeat, repeat;
+    background-image: url("../img/apple.jpg"), url("../img/pomeranian.jpg");
+    background-blend-mode: lighten;
+    color: rgb(70, 1, 1);
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: 5px solid rgb(70, 1, 1);
+}
+
+h1 {
+    color: rgb(53, 2, 46);
+    position: fixed;
+    left: 32%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(155, 4, 105);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+html {
+    background-image: url("../img/white-transparent-hexagonal-shapes-banner_1017-20590.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+div>p {
+    position: absolute;
+    left: 20%;
+    color: black;
+}
