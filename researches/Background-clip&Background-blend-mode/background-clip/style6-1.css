@@ -1,0 +1,45 @@
+h1 {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    position: fixed;
+    left: 32%;
+}
+
+.first {
+    border: 5px dotted blue;
+    padding: 15px;
+    background: lightblue;
+    background-clip: border-box;
+    color: blue;
+}
+
+.second {
+    border: 5px dotted blue;
+    padding: 15px;
+    background: skyblue;
+    background-clip: padding-box;
+    color: blue;
+}
+
+.third {
+    border: 5px dotted blue;
+    padding: 15px;
+    background: lightsteelblue;
+    background-clip: content-box;
+    color: blue;
+}
+
+html {
+    background-image: url("../img/white-transparent-hexagonal-shapes-banner_1017-20590.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(85, 85, 224);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
