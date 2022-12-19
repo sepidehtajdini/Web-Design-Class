@@ -1,0 +1,75 @@
+#one {
+    font-size: 40px;
+}
+
+#two {
+    font-size: 10px;
+}
+
+#three {
+    font-size: 30px;
+}
+
+#four {
+    font-size: 80px;
+}
+
+html {
+    background-color: rgb(236, 177, 236);
+}
+
+#one,
+#two,
+#three,
+#four {
+    background-color: white;
+    color: black;
+    margin: 1px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+strong,
+h1 {
+    color: purple;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: white 2px 2px;
+}
+
+strong {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+em {
+    color: rebeccapurple;
+    font-weight: bold;
+    text-shadow: white 2px 2px;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.flex-start,
+.baseline {
+    width: 395px;
+    height: 300px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    margin-left: 100px;
+}
