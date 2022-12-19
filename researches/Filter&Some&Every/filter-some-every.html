@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="favicon" type="icon" href="../../favicon/favicon.ico">
+    <link rel="stylesheet" href="./style18.css">
+    <title>Filter-Some-Every</title>
+</head>
+
+<body>
+    <h2>filter()</h2>
+    <ul>
+        <li>The <strong>filter()</strong> method creates a new array filled with elements that pass a test (provided by
+            a function)</li>
+        <li>It doesn't execute the function for empty elements.</li>
+        <li>It doesn't change the original array.</li>
+        <li><b>Syntax: array.filter(function(currentValue, index, arr), thisValue)</b></li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>function()</td>
+                <td>
+                    <b>Required.</b> <br>
+                    A function to run for each array element.
+                </td>
+            </tr>
+            <tr>
+                <td>currentValue</td>
+                <td><b>Required.</b> <br>
+                    The value of the current element.</td>
+            </tr>
+            <tr>
+                <td>index</td>
+                <td>Optional. <br>
+                    The index of the current element.</td>
+            </tr>
+            <tr>
+                <td>arr</td>
+                <td>Optional. <br>
+                    The array of the current element.</td>
+            </tr>
+            <tr>
+                <td>thisValue</td>
+                <td>Optional. (Default <strong>undefined</strong>) <br>
+                    A value passed to the function as its <strong>this</strong> value.</td>
+            </tr>
+            <tr>
+                <td>Return Value</td>
+                <td>An array containing the elements that pass the test. <br>
+                    If <strong>no elements</strong> pass the test it returns <strong>an empty array</strong>.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div><code>
+        const ages = [32, 33, 16, 40]; <br>
+        const result = ages.filter(checkAdult); <br>
+        function checkAdult(age) { <br>
+            return age >= 18; } <br>
+            RESULT: 32,33,40 </code></div>
+    <hr>
+    <h2>some() </h2>
+    <ul>
+        <li>The <strong>some()</strong> method checks if any array elements pass a test.</li>
+        <li>It executes the function for each element:
+            <ul>
+                <li>Tt returns <strong>true</strong> if the function returns true.</li>
+                <li>It returns <strong>false</strong> if the function returns false.</li>
+            </ul>
+        </li>
+        <li>It doesn't execute the function for <strong>empty arrays</strong>.</li>
+        <li>It doesn't change the original array.</li>
+        <li><b>Syntax: array.some(function(value, index, arr), this)</b></li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>function()</td>
+                <td>
+                    <b>Required.</b> <br>
+                    A function to for each array element.
+                </td>
+            </tr>
+            <tr>
+                <td>Value</td>
+                <td><b>Required.</b> <br>
+                    The value of the current element.</td>
+            </tr>
+            <tr>
+                <td>index</td>
+                <td>Optional. <br>
+                    The index of the current element.</td>
+            </tr>
+            <tr>
+                <td>arr</td>
+                <td>Optional. <br>
+                    The array the current element belongs to.</td>
+            </tr>
+            <tr>
+                <td>this</td>
+                <td>Optional. (Default <strong>undefined</strong>.) <br>
+                    A value passed to the function to be used as its "this" value.</td>
+            </tr>
+            <tr>
+                <td>Return Value</td>
+                <td>A boolean <br>
+                    <strong>true</strong> if any of the aray elements pass the test, otherwise <strong>false</strong>.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div><code>
+        const ages = [3, 10, 18, 20]; <br>
+        const result= ages.some(checkAdult); <br>
+        function checkAdult(age) {return age > 18;} <br>
+            RESULT: True  <br>
+        <b>some() checks if any of the elements in an array pass a test.</b></code></div>
+    <hr>
+    <h2>every() </h2>
+    <ul>
+        <li>The <strong>every()</strong> method executes a function for each array element.</li>
+        <li>It returns <strong>true</strong> if the function returns true for <strong>all</strong> elements.</li>
+        <li>It returns <strong>false</strong> if the function returns false for <strong>one</strong> element.</li>
+        <li>It doesn't execute the function for empty elements.</li>
+        <li>It doest change the original array</li>
+        <li><b>Syntax: array.every(function(currentValue, index, arr), thisValue)</b></li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>function()</td>
+                <td>
+                    <b>Required.</b> <br>
+                    A function to be run for each element in the array.
+                </td>
+            </tr>
+            <tr>
+                <td>currentValue</td>
+                <td><b>Required.</b> <br>
+                    The value of the current element.</td>
+            </tr>
+            <tr>
+                <td>index</td>
+                <td>Optional. <br>
+                    The index of the current element.</td>
+            </tr>
+            <tr>
+                <td>arr</td>
+                <td>Optional. <br>
+                    The array of the current element.</td>
+            </tr>
+            <tr>
+                <td>thisValue</td>
+                <td>Optional. (Default <strong>undefined</strong>.) <br>
+                    A value passed to the function as its <strong>this</strong> value..</td>
+            </tr>
+            <tr>
+                <td>Return Value</td>
+                <td>A boolean <br>
+                    <strong>true</strong> if all elements pass the test, otherwise <strong>false</strong>.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div> <code>
+    const ages = [32, 33, 16, 40]; <br>
+    const result= ages.every(checkAge); <br>
+    function checkAge(age) {return age > 18;} <br>
+        RESULT: False <br>
+   <b> NOTE: every() returns true if all elements in an array pass a test.</b></code></div>
+</body>
+
+</html>

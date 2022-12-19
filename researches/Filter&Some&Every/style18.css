@@ -1,0 +1,45 @@
+html {
+    background-color: lightgoldenrodyellow;
+    font-family: Georgia, Times, serif;
+}
+
+table {
+    border: 2px solid black;
+    margin: auto;
+}
+
+th {
+    border: 2px solid green;
+    background-color: rgb(161, 202, 161);
+}
+
+td {
+    border: 2px solid green;
+    background-color: linen
+}
+
+strong {
+    color: red;
+    background-color: rgb(252, 188, 162);
+}
+
+code {
+    color: darkred;
+    font-size: 20px;
+}
+
+h2 {
+    margin-left: 620px;
+}
+
+ul {
+    margin-left: 350px;
+}
+
+div {
+    margin-left: 400px;
+}
+
+b {
+    color: blue;
+}
